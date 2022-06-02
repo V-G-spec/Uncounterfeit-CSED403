@@ -12,9 +12,15 @@ npx hardhat compile
 npx hardhat node
 ```
 Note that you have to keep ```npx hardhat node``` terminal to keep network.
-You can deploy & run web using the compiled hardhat through following commands.
+You can deploy the smart contract using the compiled hardhat through following commands.
 ```shell
 npx hardhat run scripts/deploy.js --network localhost
+```
+The above command will give you address to your two deployed smart contracts.
+You can change the addresses in config file with the ones from above command.
+
+Finally you can run a web using the following.
+``` shell
 npm run dev
 ```
 
